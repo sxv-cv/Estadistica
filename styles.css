@@ -1,0 +1,345 @@
+@keyframes hero-gradient-animation {
+    0% {
+        --s-start-0: 19%;
+        --s-end-0: 54%;
+        --c-0: hsla(207, 70%, 100%, 1);
+        --y-0: 8%;
+        --x-0: 14%;
+        --s-start-1: 6%;
+        --s-end-1: 81%;
+        --c-1: hsla(356, 78%, 92%, 1);
+        --y-1: 34%;
+        --x-1: 38%;
+        --c-2: hsla(272, 95%, 62%, 1);
+        --s-start-2: 18%;
+        --s-end-2: 66%;
+        --x-2: 52%;
+        --y-2: 0%;
+        --x-3: 38%;
+        --s-start-3: 8%;
+        --s-end-3: 80%;
+        --c-3: hsla(334, 73%, 51%, 1);
+        --y-3: 3%;
+        --c-4: hsla(356, 51%, 81%, 1);
+        --s-start-4: 1%;
+        --s-end-4: 56%;
+        --x-4: 42%;
+        --y-4: 65%;
+    }
+
+    100% {
+        --s-start-0: 12%;
+        --s-end-0: 67%;
+        --c-0: hsla(291, 55%, 81%, 1);
+        --y-0: 53%;
+        --x-0: 94%;
+        --s-start-1: 12%;
+        --s-end-1: 88%;
+        --c-1: hsla(203, 65%, 85%, 1);
+        --y-1: 7%;
+        --x-1: 45%;
+        --c-2: hsla(227, 100%, 94%, 1);
+        --s-start-2: 6%;
+        --s-end-2: 88%;
+        --x-2: 4%;
+        --y-2: 95%;
+        --x-3: 86%;
+        --s-start-3: 6%;
+        --s-end-3: 69%;
+        --c-3: hsla(273, 62%, 63%, 1);
+        --y-3: 44%;
+        --c-4: hsla(226, 78%, 73%, 1);
+        --s-start-4: 2%;
+        --s-end-4: 68%;
+        --x-4: 3%;
+        --y-4: 13%;
+    }
+}
+
+@property --s-start-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 19%
+}
+
+@property --s-end-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 54%
+}
+
+@property --c-0 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(207, 70%, 100%, 1)
+}
+
+@property --y-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 8%
+}
+
+@property --x-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 14%
+}
+
+@property --s-start-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 6%
+}
+
+@property --s-end-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 81%
+}
+
+@property --c-1 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(356, 78%, 92%, 1)
+}
+
+@property --y-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 34%
+}
+
+@property --x-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 38%
+}
+
+@property --c-2 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(272, 95%, 62%, 1)
+}
+
+@property --s-start-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 18%
+}
+
+@property --s-end-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 66%
+}
+
+@property --x-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 52%
+}
+
+@property --y-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%
+}
+
+@property --x-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 38%
+}
+
+@property --s-start-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 8%
+}
+
+@property --s-end-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 80%
+}
+
+@property --c-3 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(334, 73%, 51%, 1)
+}
+
+@property --y-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 3%
+}
+
+@property --c-4 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(356, 51%, 81%, 1)
+}
+
+@property --s-start-4 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 1%
+}
+
+@property --s-end-4 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 56%
+}
+
+@property --x-4 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 42%
+}
+
+@property --y-4 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 65%
+}
+
+body {
+    --c-0: hsla(207, 70%, 100%, 1);
+    --y-0: 8%;
+    --x-0: 14%;
+    --c-1: hsla(356, 78%, 92%, 1);
+    --y-1: 34%;
+    --x-1: 38%;
+    --c-2: hsla(272, 95%, 62%, 1);
+    --x-2: 52%;
+    --y-2: 0%;
+    --x-3: 38%;
+    --c-3: hsla(334, 73%, 51%, 1);
+    --y-3: 3%;
+    --c-4: hsla(356, 51%, 81%, 1);
+    --x-4: 42%;
+    --y-4: 65%;
+    ;
+    background-color: hsla(217, 86%, 67%, 1);
+    background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)), radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)), radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2)), radial-gradient(circle at var(--x-3) var(--y-3), var(--c-3) var(--s-start-3), transparent var(--s-end-3)), radial-gradient(circle at var(--x-4) var(--y-4), var(--c-4) var(--s-start-4), transparent var(--s-end-4));
+    animation: hero-gradient-animation 5s linear infinite alternate;
+    background-blend-mode: normal, normal, normal, normal, normal;
+}
+
+/* Estilo global y fondo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* Contenedor principal para centrar el formulario */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Formulario de ingreso */
+.form-container {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur (15px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+label {
+    font-size: 1.1em;
+    color: #555;
+}
+
+input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #00000035;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.btn-submit {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(54, 54, 54);
+    border: 1px solid #00000035;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Diseño de la cuadrícula para los resultados */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.result-section {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur (15px);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Estilo para la tabla de frecuencia */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el espacio entre bordes de las celdas */
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #282828; /* Bordes definidos para una cuadrícula clara */
+    padding: 8px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+td:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+}

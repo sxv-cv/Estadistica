@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Tiempos de Respuesta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal para centrar el formulario -->
+    <div class="main-container">
+        <div class="form-container">
+            <h1>Registro y Análisis de Tiempos de Respuesta</h1>
+            <form id="responseForm">
+                <label for="responseTimes">Ingrese los tiempos de respuesta (separados por comas):</label>
+                <input type="text" id="responseTimes" placeholder="Ej: 100, 200, 150, 300">
+                <button type="submit" class="btn-submit">Calcular</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Divisiones para los resultados (inicialmente ocultas) -->
+    <div class="results-grid" id="results" style="display: none;">
+        <!-- Tabla de Frecuencia -->
+        <div class="result-section">
+            <h2>Tabla de Frecuencia</h2>
+            <div id="frequencyTable"></div>
+        </div>
+
+        <!-- Estadísticas de posición -->
+        <div class="result-section">
+            <h2>Medidas de Posición</h2>
+            <p><strong>Media:</strong> <span id="mean"></span></p>
+            <p><strong>Mediana:</strong> <span id="p50"></span></p>
+            <p><strong>Moda:</strong> <span id="mode"></span></p>
+            <p><strong>Percentil 10:</strong> <span id="p10"></span></p>
+            <p><strong>Percentil 25 (Cuartil 1):</strong> <span id="p25"></span></p>
+            <p><strong>Percentil 75 (Cuartil 3):</strong> <span id="p75"></span></p>
+            <p><strong>Percentil 90:</strong> <span id="p90"></span></p>
+        </div>
+
+        <!-- Medidas de dispersión -->
+        <div class="result-section">
+            <h2>Medidas de Dispersión</h2>
+            <p><strong>Varianza:</strong> <span id="variance"></span></p>
+            <p><strong>Desviación Estándar:</strong> <span id="stdDeviation"></span></p>
+            <p><strong>Coeficiente de Asimetría de Fisher:</strong> <span id="fisherCoefficient"></span></p>
+        </div>
+
+        <!-- Sección adicional para otros cálculos de varianza -->
+        <div class="result-section">
+            <h2>Medidas Adicionales</h2>
+            <p><strong>Rango:</strong> <span id="range"></span></p>
+            <p><strong>Rango Intercuartílico:</strong> <span id="iqr"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
